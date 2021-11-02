@@ -1,9 +1,9 @@
 
-trait TrafficLight {
+pub trait TrafficLight {
     fn duration(&self) -> i8;
 }
 
-enum TrafficLightColor {
+pub enum TrafficLightColor {
     Green,
     Yellow,
     Red,
@@ -19,8 +19,12 @@ impl TrafficLight for TrafficLightColor {
     }
 }
 
-fn main() {
-    println!("Green light on {} seconds", TrafficLightColor::Green.duration());
-    println!("Yellow light on {} seconds", TrafficLightColor::Yellow.duration());
-    println!("Red light on {} seconds", TrafficLightColor::Red.duration());
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn it_works() {
+        let result = 2 + 2;
+        assert_eq!(result, 4);
+    }
 }

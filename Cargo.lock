@@ -3,5 +3,12 @@
 version = 3
 
 [[package]]
-name = "substrate-course-homework-rust"
+name = "app"
+version = "0.1.0"
+dependencies = [
+ "traffic-light",
+]
+
+[[package]]
+name = "traffic-light"
 version = "0.1.0"
