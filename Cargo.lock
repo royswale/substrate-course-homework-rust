@@ -6,9 +6,14 @@ version = 3
 name = "app"
 version = "0.1.0"
 dependencies = [
+ "print-area",
  "sum-int",
  "traffic-light",
 ]
+
+[[package]]
+name = "print-area"
+version = "0.1.0"
 
 [[package]]
 name = "sum-int"
