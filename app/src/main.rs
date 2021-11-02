@@ -1,8 +1,7 @@
-use traffic_light;
-use traffic_light::TrafficLight;
+use traffic_light::*;
 
 fn main() {
-    println!("Green light on {} seconds", traffic_light::TrafficLightColor::Green.duration());
-    println!("Yellow light on {} seconds", traffic_light::TrafficLightColor::Yellow.duration());
-    println!("Red light on {} seconds", traffic_light::TrafficLightColor::Red.duration());
+    println!("Green light on {} seconds", TrafficLightColor::Green.duration());
+    println!("Yellow light on {} seconds", TrafficLightColor::Yellow.duration());
+    println!("Red light on {} seconds", TrafficLightColor::Red.duration());
 }
